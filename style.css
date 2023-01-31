@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:grid;
+    grid-template: 2fr 4fr 4fr 0.5fr / 1fr 3fr 1fr;
+    height: 100vh;
+}
+
+#header-area{
+    background-color: blue;
+    grid-area: 1/2/2/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+ 
+}
+
+.top-header{
+    grid-row: 1;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 4fr 1.5fr;
+    gap: 50px;
+}
+
+#search-section{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 30px;
+    align-items: center;
+    gap: 15px;
+}
+
+#searchbar{
+    border-radius: 25px;
+    align-self: stretch;
+    padding: 10px; 
+    padding-left: 20px;;
+    width: 500px;
+}
+
+.account-links{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    border: 1px red solid;
+    column-gap: 1px;
+    margin-right: 100px;
+    gap: 15px;
+}
+
+.notifications{
+    border: 1px solid green;
+}
+
+#bell{
+    width: 55px;
+    height: auto;
+    border: 1px red solid;
+}
+
+.profile-pic{
+    border-radius: 75px;
+    border: 1px red solid;
+    background-color: aqua;
+    font-size: 50px;
+    font-weight: 900;
+    width: 70px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: wavy;
+}
+
+.user-name{
+    font-weight: 900;
+    font-size: larger;
+}
+
+.bottom-header{
+    grid-row: 2;
+    background-color: aqua;
+}
+
+#sidebar{
+    background-color: red;
+    grid-area: 1/1/5/2;
+}
+
+#projects{
+    background-color: aquamarine;
+    grid-area: 2/2/4/3;
+}
+
+#announcements{
+    background-color: yellow;
+    grid-area: 2/3;
+}
+
+#trending{
+    background-color: palevioletred;
+    grid-area: 3/3;
+}
+
+#footer{
+    background-color: black;
+    grid-area: 4/1/5/4;
+}

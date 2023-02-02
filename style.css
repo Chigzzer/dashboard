@@ -30,15 +30,22 @@ body{
     grid-template-columns: auto 1fr;
     margin: 30px;
     align-items: center;
-    gap: 15px;
+    gap: 75px;
+}
+
+.search-logo{
+    font-weight: 900;
+    font-size: 4rem;
 }
 
 #searchbar{
-    border-radius: 25px;
+    border-radius: 50px;
     align-self: stretch;
     padding: 10px; 
     padding-left: 20px;;
-    width: 500px;
+    width: 50%;
+    height: 75%;
+    align-self: center;
 }
 
 .account-links{
@@ -57,36 +64,52 @@ body{
 }
 
 #bell{
-    width: 55px;
+    width: 100px;
     height: auto;
     border: 1px red solid;
 }
 
 .profile-pic{
-    border-radius: 75px;
+    border-radius: 100%;
     border: 1px red solid;
     background-color: aqua;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 900;
-    width: 70px;
-    text-align: center;
-    font-style: italic;
+    width: 100px;
     text-decoration: wavy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .user-name{
     font-weight: 900;
-    font-size: larger;
+    font-size: 80px;
 }
 
 .bottom-header{
     grid-row: 2;
     background-color: aqua;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.user{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 50px;
+    align-content: center;
+    border: 1px red solid;
+}
+
+.dashboard-title{
+    grid-area: 1/1;
+    background-color: crimson;
 }
 
 #sidebar{
     background-color: red;
-    grid-area: 1/1/5/2;
+    grid-area: 2/1/5/2;
 }
 
 #projects{

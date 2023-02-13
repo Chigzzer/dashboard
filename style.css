@@ -100,11 +100,46 @@ body{
     gap: 50px;
     align-content: center;
     border: 1px red solid;
+    margin-left: 25px;
+}
+
+.admin-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    align-items: center;
+    justify-items: center;
+}
+
+.admin-buttons button{
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px red solid;
+    font-size: 25px;
+    font-weight: 800;
 }
 
 .dashboard-title{
-    grid-area: 1/1;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
     background-color: crimson;
+    align-items: center;
+    gap: 50px;
+    padding: 25px;
+}
+
+#logo{
+    border: 1px green solid;
+}
+
+#logo img{
+    width: 250px;
+    height: auto;
+}
+
+#title{
+    font-size: 50px;
 }
 
 #sidebar{

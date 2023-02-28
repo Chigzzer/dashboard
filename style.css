@@ -214,6 +214,8 @@ body{
 
 .project{
     background-color: burlywood;
+    display: grid;
+    grid-template: 0.5fr 2fr 0.5fr / 1fr 1fr ;
 }
 
 #announcements{

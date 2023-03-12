@@ -276,4 +276,8 @@ body{
 #footer{
     grid-area: footer;
     background-color: darkgoldenrod;
+    text-align: center;
+    align-self: stretch;
+    padding: 0.2em;
 }
+

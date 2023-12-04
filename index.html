@@ -2,177 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Dashboard</title>
 </head>
 <body>
     <link href="style.css" rel="stylesheet">
-    <div id="header">
-        <div id="top-header">
-            <div id="search-box">
-                <div class="search-logo">Search</div>
-                <div class="search-input"><input type="search" name="search" id="search-bar"></div>
+    <div id="app">
+        <div id="header"> 
+            <div id="top-header">
+                <div id="search-bar">
+                    <div id="logo">LOGO</div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div id="profile-section">
+                    <div id="noti-bell"></div>
+                    <div id="profile-logo"></div>
+                    <div id="profile-name"></div>
+                </div>
             </div>
-            <div id="admin-buttons">
-                <div id="notifications"><img src="bell-outline.png" alt="bell logo" id="bell_logo"></div>
-                <div class="logo" id="small"><img id="small-logo" src="letter_c.png" alt="c logo"></div>
-                <div id="user-name">Chiraag Chandarana</div>
+            <div id="bottom-header"></div>
+        </div>
+        <div id="sidebar">
+            <div id="title">
+                Dashboard
+            </div>
+            <div id="main-tabs">
+                <div class="tab" id="home">Home</div>
+                <div class="tab" id="messages">Messages</div>
+                <div class="tab" id="events">Events</div>
+                <div class="tab" id="Tasks">Tasks</div>
+                <div class="tab" id="communities">Communities</div>
+            </div>
+            <div id="setting-tabs">
+                <div class="tab" id="uppload">Upload Project</div>
+                <div class="tab">Settings</div>
             </div>
         </div>
-        <div id="bottom-header">
-            <div id="user-name-title">
-                <div class="logo" id="big"><img id="big-logo" src="letter_c.png" alt="c logo"></div>
-                <div id="user-text">Chiraag Chandarana (@Chigzzer)</div>
-            </div>
-            <div id="dashboard-buttons">
-                <div class="button-item"><button>New</button></div>
-                <div class="button-item"><button>Upload</button></div>
-                <div class="button-item"><button>Share</button></div>
-            </div>
-        </div>
+        <div id="main"></div>
+        <div id="footer">Created by Chiraag Chandarana</div>
     </div>
-    <div id="title">
-        <div id="db-logo">
-            <img onclick="window.open('http://www.github.com/Chigzzer')" src="github.png" alt="github logo">
-        </div>
-        <div id="db-title">Chigzzer</div>
-    </div>
-    <div id="main">
-        <div id="projects">
-            <div class="main-title">Projects</div>
-            <div class="project">
-                <div class="project-title">Calculator</div>
-                <div class="project-desc">A small web application that I used to improve my knowledge and understanding of Javascript</div>
-                <div class="git-link">
-                    <div title="Link to github repo">
-                        <a href="https://github.com/Chigzzer/calculator" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="link-variant.png" alt="link logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="page-link">
-                    <div title="Link to live page">
-                        <a href="https://chigzzer.github.io/calculator/" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="stretch-to-page.png" alt="page link">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-title">Etch a Sketch Pad</div>
-                <div class="project-desc">A web application that allows the user to draw on a pad. Further developed my Javascript and CSS skills</div>
-                <div class="git-link">
-                    <div title="Link to github repo">
-                        <a href="https://github.com/Chigzzer/Sketch" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="link-variant.png" alt="link logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="page-link">
-                    <div title="Link to live page">
-                        <a href="https://chigzzer.github.io/Sketch/" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="stretch-to-page.png" alt="page link">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-title">Sign Up Form</div>
-                <div class="project-desc">An application made to help me practice my form creating skills.</div>
-                <div class="git-link">
-                    <div title="Link to github repo">
-                        <a href="https://github.com/Chigzzer/Sign-Up-Form" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="link-variant.png" alt="link logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="page-link">
-                    <div title="Link to live page">
-                        <a href="https://chigzzer.github.io/Sign-Up-Form/" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="stretch-to-page.png" alt="page link"> 
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-title">Rock Paper Scissors</div>
-                <div class="project-desc">A web application that uses Javascript and HTML to allow Rock Paper Scissors against an AI. </div>
-                <div class="git-link">
-                    <div title="Link to github repo">
-                        <a href="https://github.com/Chigzzer/Rock-Paper-Scissors" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="link-variant.png" alt="link logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="page-link">
-                    <div title="Link to live page">
-                        <a href="https://chigzzer.github.io/Rock-Paper-Scissors/" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="stretch-to-page.png" alt="page link">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-title">Minesweeper</div>
-                <div class="project-desc">A personal project that allows the user to play minesweeper over multiple difficulties</div>
-                <div class="git-link">
-                    <div title="Link to github repo">
-                        <a href="https://github.com/Chigzzer/Minesweeper" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="link-variant.png" alt="link logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="page-link">
-                    <div title="Link to live page">
-                        <a href="https://chigzzer.github.io/Minesweeper/" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="stretch-to-page.png" alt="page link">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-title">Fantasy Football</div>
-                <div class="project-desc">An ongoing website that allows the user to review and compare player's points.</div>
-                <div class="git-link">
-                    <div title="Link to github repo">
-                        <a href="https://github.com/Chigzzer/FPL" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="link-variant.png" alt="link logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="page-link">
-                    <div title="Link to live page">
-                        <a href="https://chigzzer.github.io/FPL/" target="_blank" rel="noreferrer noopener" onclick="window.open(this.href,'_blank');return false;">
-                            <img src="stretch-to-page.png" alt="page link">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="announcements">
-            <div class="main-title">Announcements</div>
-        </div>
-        <div id="updates">
-            <div class="main-title">Updates</div>
-        </div>
-    </div>
-    <div id="sidebar">
-        <div id="menu-items">
-            <div class="menu-item"><img src="home-modern.png" alt="home logo"><div>Home</div></div>
-            <div class="menu-item"><img src="home-modern.png" alt="profile logo"><div>Profile</div></div>
-            <div class="menu-item"><img src="home-modern.png" alt="messages logo"><div>Messages</div></div>
-            <div class="menu-item"><img src="home-modern.png" alt="history logo"><div>History</div></div>
-        </div>
-        <div id="admin-settings">
-            <div class="admin-setting"><img src="home-modern.png" alt="Settings"><div>Settings</div></div>
-            <div class="admin-setting"><img src="home-modern.png" alt="Support"><div>Support</div></div>
-            <div class="admin-setting"><img src="home-modern.png" alt="Security"><div>Security</div></div>
-        </div>
-    </div>
-    <div id="footer">
-        Created by &copy Chiraag
-    </div>
-
+    <script src="script.js"></script>
 </body>
 </html>

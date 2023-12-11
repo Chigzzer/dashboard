@@ -26,6 +26,7 @@
     "logo"
     "main-tabs"
     "setting-tabs";
+    padding: 5px ;
 }
 
 #title{
@@ -63,9 +64,9 @@
 
 #header{
     grid-area: header;
-    background-color: red;
+    background-color: yellow;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 0.5fr 1.5fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "top-half"
@@ -77,29 +78,51 @@
     background-color: aquamarine;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 5px;
+    padding: 1px;
+    gap: 25px;  
+    align-items: center;
 }
 
 #search-bar{
-    border: 1px solid red;
+    border: 0px solid red;
     width: 100%;
     display: flex;
+    margin: 2px;
+    height: 75%;
+}
+
+#top-header input{
+    border-radius: 30px;
+    padding: 2px;
+    width: 100%;
 }
 
 #profile-section{
     display: flex;
+    align-items: center;
 }
 
-#top-header input{
-    border-radius: 20px;
-    padding: 5px;
-    width: 100%;
+#profile-section img{
+    width: 50px;
+}
+
+#profile-logo-top img{
+    width: 100px;
 }
 
 #bottom-header{
     grid-area: bottom-half;
     background-color: black;
+    border: 1px solid red;
+    color: white;
+    display: flex;
+    align-items: center;
 }
+
+#bottom-header img{
+    width:200px ;
+}
+
 #main{
     grid-area: main;
     background-color: green;

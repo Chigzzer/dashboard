@@ -127,6 +127,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: 2fr 1fr;
+    width: 100%;
 }
 
 #bottom-header  img{
@@ -136,6 +137,16 @@
 #logo{
     display: flex;
     align-items: center;
+}
+
+
+#header-buttons{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    margin-right: 25px;
+    width: 100%;
+    border: 1px solid green;
 }
 
 .project-button{

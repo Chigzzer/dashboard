@@ -29,10 +29,12 @@
     padding: 5px ;
 }
 
+
 #title{
     grid-area: logo;
     background-color: blue;
     font-size: 5em;
+    padding-left: 5px;
 }
 
 #main-tabs{
@@ -59,14 +61,21 @@
 }
 
 .tab{
-    font-size: 50px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar-img{
+    width: 15%;
 }
 
 #header{
     grid-area: header;
     background-color: yellow;
     display: grid;
-    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "top-half"
@@ -103,7 +112,7 @@
 }
 
 #profile-section img{
-    width: 50px;
+    width: 25px;
 }
 
 #profile-logo-top img{
@@ -115,12 +124,24 @@
     background-color: black;
     border: 1px solid red;
     color: white;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+}
+
+#bottom-header  img{
+    width:100px ;
+}
+
+#logo{
     display: flex;
     align-items: center;
 }
 
-#bottom-header img{
-    width:200px ;
+.project-button{
+    padding: 15px 20px 15px 20px;
+    border-radius: 100%;
+    border: 1px solid red;
 }
 
 #main{

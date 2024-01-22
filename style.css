@@ -180,24 +180,31 @@
     justify-content: space-around;
     gap: 5%;
     padding: 5px;
-    align-items: cen;
+    align-items: center;
+    overflow: scroll;
 }
 
 .project{
     background-color: blueviolet;
     width: 30%;
-    height: 200px;
+    height: auto;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 1%;
 }
 
 .proj-title{
-    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+    font-size: 2em;
     font-weight: 700;
 }
 
 .proj-desc{
     background-color: blue;
+    padding: 5%;    
 }
 
 .proj-links{

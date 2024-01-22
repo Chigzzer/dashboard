@@ -122,11 +122,11 @@
 #bottom-header{
     grid-area: bottom-half;
     background-color: black;
-    border: 1px solid red;
+    border: 0px solid red;
     color: white;
     display: grid;
     align-items: center;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     width: 100%;
 }
 
@@ -139,25 +139,69 @@
     align-items: center;
 }
 
-
 #header-buttons{
     display: flex;
     gap: 5%;
     align-items: center;
-    margin-right: 25px;
-    width: 100%;
-    border: 1px solid green;
+    padding: 10px;
+    height: 100%;
+    border: 0px solid green;
 }
 
 .project-button{
-    padding: 15px 20px 15px 20px;
-    border-radius: 100%;
+    border-radius: 45%;
     border: 1px solid red;
+    width: 30%;
+    height: 85%;
+    padding: 0px;
 }
 
 #main{
     grid-area: main;
     background-color: green;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#projects-area{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5%;
+    padding: 5px;
+    align-items: flex-start;
+}
+
+.project{
+    background-color: blueviolet;
+    width: 30%;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.proj-title{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.proj-desc{
+    background-color: blue;
+}
+
+.proj-links{
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: space-around;
+}
+
+.proj-links img{
+    width: 45px;
+}
+
+#announcements{
+    background-color: red;
 }
 
 #footer{

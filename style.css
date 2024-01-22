@@ -6,9 +6,10 @@
 #app{
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 4fr auto;
+    grid-template-rows: 0.5fr 1fr 6fr auto;
     grid-template-areas: 
-    "sidebar header"
+    "top-header top-header"
+    "sidebar bottom-header"
     "sidebar main"
     "footer footer";
     width: 100vw;
@@ -21,9 +22,8 @@
     background-color: yellow;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.88fr 4fr 4fr;
+    grid-template-rows:  4fr 4fr;
     grid-template-areas: 
-    "logo"
     "main-tabs"
     "setting-tabs";
     width: 100%;
@@ -32,7 +32,6 @@
 
 
 #title{
-    grid-area: logo;
     background-color: orange;
     font-size: 2em;
     padding-left: 5px;
@@ -89,12 +88,22 @@
 }
 
 #top-header{
-    grid-area: top-half;
+    grid-area: top-header;
     background-color: aquamarine;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 6fr;
     padding: 1px;
     gap: 25px;  
+    align-items: center;
+    border: 1px solid blue;
+}
+
+#th-rs{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: brown;
+    gap: 25%;
+    padding: 1%;
     align-items: center;
 }
 
@@ -115,6 +124,7 @@
 #profile-section{
     display: flex;
     align-items: center;
+    background-color: aqua;
 }
 
 #profile-section img{
@@ -126,7 +136,7 @@
 }
 
 #bottom-header{
-    grid-area: bottom-half;
+    grid-area: bottom-header;
     background-color: black;
     border: 0px solid red;
     color: white;

@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    --main-bg-colour: rgba(100,100,100, 0.3);
 }
 
 #app{
@@ -13,7 +14,7 @@
     "footer footer";
     width: 100vw;
     height: 100vh;
-    border: 0px solid red;
+    border: 0px solid rgba(126, 125, 125, 0.397);
 }
 
 #sidebar{
@@ -81,7 +82,7 @@
 
 #header{
     grid-area: header;
-    background-color: yellow;
+    background-color: white;
     display: grid;
     grid-template-rows: 0.5fr 1fr;
     grid-template-columns: 1fr;
@@ -92,7 +93,6 @@
 
 #top-header{
     grid-area: top-half;
-    background-color: aquamarine;
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 1px;
@@ -129,9 +129,8 @@
 
 #bottom-header{
     grid-area: bottom-half;
-    background-color: black;
     border: 0px solid red;
-    color: white;
+    color: darkslategray;
     display: grid;
     align-items: center;
     grid-template-columns: 3fr 1fr;
@@ -166,7 +165,7 @@
 
 #main{
     grid-area: main;
-    background-color: green;
+    background-color: var(--main-bg-colour);
     display: grid;
     grid-template-columns: 3fr 1fr;
     border: 0px solid lime;
@@ -174,23 +173,27 @@
 }
 
 #projects-area{
-    background-color: white;
+    display: grid;
+    grid-template-rows: auto 10fr;
+}
+
+#projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 5%;
-    padding: 5px;
+    gap: 1%;
+    row-gap: 3%;
+    padding: 1px;
     align-items: center;
-    overflow: scroll;
+    height: 90%;
 }
 
 .project{
-    background-color: blueviolet;
     width: 30%;
     height: 35vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr;    
+    background-color: azure;
 }
 
 .proj-title{
@@ -203,26 +206,25 @@
 }
 
 .proj-desc{
-    background-color: blue;
     padding: 5%;    
-    color: white;
+    color: darkslategray;
     font-size: 1em;
     text-align: center;
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .proj-links{
-    background-color: darkgoldenrod;
+    background-color: darkslategray;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .proj-links img{
-    width: 45px;
+    width: 30px;
 }
 
 #info{
-    background-color: red;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -230,12 +232,14 @@
 .title{
     font-weight: 800;
     font-size: 28px;
-    padding-left: 5%;
+    text-align: center;
+    margin-bottom: 1%;
 }
 
 .out-card{
     display: flex;
     flex-direction: column;
+    padding: 2%;
 }
 
 .inner-card{
@@ -244,10 +248,12 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 100%;
+    width: 80%;
     font-size: 12px;
     border: 0px solid red;
-    padding: 1%;
+    padding: 5% 5%;
+    margin: 2%;
+    background-color: white;
 }
 
 .announcement{
@@ -261,14 +267,27 @@
 .ann-title{
     font-weight: 800;
     font-size: 16px;
+    text-align: center;
 }
 
-#announcements{
-    background-color: aqua;
+.users{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 20%;
 }
 
-#team{
-    background-color: blueviolet;
+.user-logo{
+    border: 0px solid red;
+}
+
+.user-logo img{
+    width: 50%;
+    border: 0px solid blue;
+}
+
+.username{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
 }
 
 #footer{

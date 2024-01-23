@@ -221,8 +221,34 @@
     width: 45px;
 }
 
-#announcements{
+#info{
     background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 28px;
+    padding-left: 5%;
+}
+
+.out-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-card{
+    background-color: black;
+    width: 80%;
+}
+
+#announcements{
+    background-color: aqua;
+}
+
+#team{
+    background-color: blueviolet;
 }
 
 #footer{

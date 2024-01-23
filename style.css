@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     --main-bg-colour: rgba(100,100,100, 0.3);
+    --second-bg-colour: azure;
+    --third-colour: darkslategrey;
 }
 
 #app{
@@ -19,7 +21,7 @@
 
 #sidebar{
     grid-area: sidebar;
-    background-color: darkslategray;
+    background-color: var(--third-colour);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.88fr 4fr 4fr;
@@ -29,7 +31,7 @@
     "setting-tabs";
     width: 100%;
     justify-content: center;
-    color: aliceblue;
+    color: var(--second-bg-colour);
 }
 
 
@@ -82,7 +84,7 @@
 
 #header{
     grid-area: header;
-    background-color: white;
+    background-color: var(--second-bg-colour);
     display: grid;
     grid-template-rows: 0.5fr 1fr;
     grid-template-columns: 1fr;
@@ -130,7 +132,7 @@
 #bottom-header{
     grid-area: bottom-half;
     border: 0px solid red;
-    color: darkslategray;
+    color: var(--third-colour);
     display: grid;
     align-items: center;
     grid-template-columns: 3fr 1fr;
@@ -158,6 +160,8 @@
 .project-button{
     border-radius: 45%;
     border: 0px solid red;
+    background-color: var(--third-colour);
+    color: var(--second-bg-colour);
     width: 30%;
     height: 85%;
     padding: 0px;
@@ -193,7 +197,7 @@
     height: 35vh;
     display: grid;
     grid-template-rows: 2fr 4fr 1fr;    
-    background-color: azure;
+    background-color: var(--second-bg-colour);
 }
 
 .proj-title{
@@ -207,14 +211,14 @@
 
 .proj-desc{
     padding: 5%;    
-    color: darkslategray;
+    color: var(--third-colour);
     font-size: 1em;
     text-align: center;
     border: 0px solid red;
 }
 
 .proj-links{
-    background-color: darkslategray;
+    background-color: var(--third-colour);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -227,6 +231,7 @@
 #info{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    color: var(--third-colour);
 }
 
 .title{
@@ -292,8 +297,9 @@
 
 #footer{
     grid-area: footer;
-    background-color: brown;
+    background-color: var(--second-bg-colour);
     display: flex;
     justify-content: flex-end;
     padding-right: 1%;
+    color: azure;
 }

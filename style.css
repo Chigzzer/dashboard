@@ -187,10 +187,10 @@
 .project{
     background-color: blueviolet;
     width: 30%;
-    height: auto;
-    display: grid;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
-    gap: 1%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
 }
 
 .proj-title{
@@ -205,6 +205,10 @@
 .proj-desc{
     background-color: blue;
     padding: 5%;    
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid red;
 }
 
 .proj-links{

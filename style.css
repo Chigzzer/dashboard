@@ -1,9 +1,13 @@
 *{
     padding: 0;
     margin: 0;
-    --main-bg-colour: rgba(100,100,100, 0.3);
+    --main-bg-colour: rgba(40,79,79, 0.3);
     --second-bg-colour: azure;
     --third-colour: darkslategrey;
+}
+
+a:hover img{
+    transform: scale(1.5);
 }
 
 #app{
@@ -98,7 +102,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 1px;
-    gap: 25px;  
+    gap: 20%;  
     align-items: center;
 }
 
@@ -112,13 +116,14 @@
 
 #top-header input{
     border-radius: 30px;
-    padding: 2px;
+    padding: 5px 30px;
     width: 100%;
 }
 
 #profile-section{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 #profile-section img{
@@ -135,7 +140,7 @@
     color: var(--third-colour);
     display: grid;
     align-items: center;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     width: 100%;
 }
 
@@ -150,21 +155,27 @@
 
 #header-buttons{
     display: flex;
-    gap: 5%;
+    gap: 1%;
     align-items: center;
+    justify-content: space-evenly;
     padding: 10px;
     height: 100%;
     border: 0px solid green;
 }
 
 .project-button{
-    border-radius: 45%;
+    border-radius: 25px;
     border: 0px solid red;
     background-color: var(--third-colour);
     color: var(--second-bg-colour);
-    width: 30%;
-    height: 85%;
-    padding: 0px;
+    width: 25%;
+    padding: 10px 24px;
+}
+
+.project-button:hover{
+    background-color: var(--second-bg-colour);
+    border: 2px solid var(--third-colour);
+    color: var(--third-colour);
 }
 
 #main{
@@ -192,9 +203,19 @@
     height: 90%;
 }
 
+.project:hover{
+    border: 0px solid var(--third-colour);
+}
+
+.project:hover .proj-title{
+    color: var(--third-colour);
+    font-weight: 900;
+    transform: scale(1.5);
+}
+
 .project{
     width: 30%;
-    height: 35vh;
+    height: 33vh;
     display: grid;
     grid-template-rows: 2fr 4fr 1fr;    
     background-color: var(--second-bg-colour);
@@ -204,8 +225,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0.5%;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -269,6 +291,7 @@
     justify-content: space-evenly;
     border: 0pc solid red;
     height: 25%;
+    
 }
 
 .ann-title{

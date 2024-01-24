@@ -255,6 +255,7 @@ a:hover img{
     display: grid;
     grid-template-rows: 1fr 1fr;
     color: var(--third-colour);
+    text-align: center;
 }
 
 .title{
@@ -263,12 +264,14 @@ a:hover img{
     font-size: 28px;
     text-align: center;
     margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .out-card{
     display: flex;
     flex-direction: column;
     padding: 2%;
+    align-items: center;
 }
 
 .inner-card{
@@ -282,7 +285,8 @@ a:hover img{
     border: 0px solid red;
     padding: 5% 5%;
     margin: 2%;
-    background-color: white;
+    background-color: var(--second-bg-colour);
+    text-align: center;
 }
 
 .announcement{

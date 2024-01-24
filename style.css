@@ -13,7 +13,7 @@
     grid-template-areas: 
     "sidebar header"
     "sidebar main"
-    "footer footer";
+    "sidebar footer";
     width: 100vw;
     height: 100vh;
     border: 0px solid rgba(126, 125, 125, 0.397);
@@ -236,6 +236,7 @@
 }
 
 .title{
+    color: var(--third-colour);
     font-weight: 800;
     font-size: 28px;
     text-align: center;
@@ -302,5 +303,5 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 1%;
-    color: azure;
+    color: var(--third-colour);
 }

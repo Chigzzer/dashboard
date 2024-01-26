@@ -253,7 +253,7 @@ a:hover img{
 
 #info{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
     color: var(--third-colour);
     text-align: center;
 }
@@ -267,11 +267,18 @@ a:hover img{
     margin-top: 1%;
 }
 
+#announcements{
+    height: 100%;
+    border: 0px solid yellow
+}
+
 .out-card{
     display: flex;
     flex-direction: column;
     padding: 2%;
     align-items: center;
+    border: 0px solid green;
+    justify-content: flex-start;
 }
 
 .inner-card{
@@ -293,7 +300,7 @@ a:hover img{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 0pc solid red;
+    border: 0px solid red;
     height: 25%;
     
 }
@@ -308,6 +315,8 @@ a:hover img{
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 20%;
+    border: 0px solid red;
+    align-items: center ;
 }
 
 .user-logo{
@@ -319,9 +328,8 @@ a:hover img{
     border: 0px solid blue;
 }
 
-.username{
-    display: grid;
-    grid-template-rows: 1fr 1fr ;
+.user{
+    justify-self: flex-start;
 }
 
 #footer{

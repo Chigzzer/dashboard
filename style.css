@@ -6,6 +6,10 @@
     --third-colour: darkslategrey;
 }
 
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
 a:hover img{
     transform: scale(1.1);
 }
@@ -46,6 +50,7 @@ a:hover img{
     font-weight: 800;
     align-items: center;
     display: flex;
+    
 }
 
 #main-tabs{
@@ -265,6 +270,7 @@ a:hover img{
     text-align: center;
     margin-bottom: 1%;
     margin-top: 1%;
+    font-family: cursive;
 }
 
 #announcements{
@@ -299,9 +305,11 @@ a:hover img{
 .announcement{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border: 0px solid red;
-    height: 25%;
+    height: 30%;
+    
+
     
 }
 
